@@ -1,0 +1,202 @@
+/* Глобальные стили */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}  
+
+body {
+    min-width: 320px;
+    margin: auto;
+    font-family: "TT Lakes", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 0;
+    color: #1B1C21;
+}
+
+a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.container {
+    margin: 0 16px;
+}
+
+.visually-hidden {
+    line-height: 0;
+    font-size: 0;
+    color: transparent;
+}
+
+/* Стили хедера */
+.header {
+    height: 88px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header--left, .header--right {
+    display: flex;
+    align-items: center;
+}
+
+.header__icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px; 
+}
+
+.header__icon:last-child {
+    margin-right: 0;
+}
+
+.header__icon--menu {
+    background-image: url(../images/icon_menu.svg);
+}
+
+.header__icon--phone {
+    background-image: url(../images/icon_phone.svg);
+}
+
+.header__icon--chat {
+    background-image: url(../images/icon_chat.svg);
+}
+
+.header__icon--profile {
+    background-image: url(../images/icon_profile.svg);
+}
+
+.header__icon--settings {
+    background-image: url(../images/icon_settings.svg);
+}
+
+.header__icon--checkstatus {
+    background-image: url(../images/icon_checkstatus.svg);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo::after {
+    content: "";
+    background-color: #EAEAEA;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    display: block;
+    margin-left: 16px;
+}
+
+.header__img-logo {
+    width: 96px;
+    height: auto;
+}
+
+/* Стили главного блока */
+.services {
+    background-color: #F8F8F8;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services__title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 40px;
+    letter-spacing: -0.6px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.services__title::before {
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    margin-right: 12px;
+    border-radius: 0 4px 4px 0;
+    content: "";
+}
+
+.services__navigation {
+    margin-left: 16px;
+    margin-bottom: 14px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+    overflow: auto;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7E7E82;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.navigation__item {
+    padding: 6px 14px;
+}
+
+.navigation__item--active:first-child {
+    background-color: #FFFFFF;
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+.services__text {
+    max-height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.services__read-next {
+    background-color: transparent;
+    border: none;
+    line-height: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.services__read-next::before {
+    content: "";
+    background-image: url(../images/arrows.svg);
+    margin-right: 8px;
+    width: 24px;
+    height: 24px;
+}
+
+.services__photo {
+    width: 100%;
+    height: auto;
+}
